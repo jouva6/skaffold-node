@@ -40,7 +40,7 @@ spec:
 
             - |
 
-              const http = require('http');
+               const http = require('http');
 
               const url = require('url');
 
@@ -50,7 +50,11 @@ spec:
 
                 if (p == '/') {
 
-                  res.end('<h1>Node.js V1</h1>');
+                  res.end('<h1>Node.js V2</h1>');
+
+                } else if (p == '/about') {
+
+                  res.end('<p>About Node.js V2</p>');
 
                 } else {
 
